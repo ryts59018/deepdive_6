@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floating Button</title>
     <style>
-    button{ width: 100px;
-        height: 100px;
-        background-image:url('./images/icons/setting.svg');
-        background-color: rgb(255, 255, 255);
-        
-        border-radius: 100px;
-        cursor: pointer;
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+        .blind {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
         }
-
-    button:hover{ background-color:gray ;
-
-    }
 
         .container {
             max-width: 700px;
@@ -31,17 +32,47 @@
             text-align: justify;
         }
 
-        
+        .btn {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #d8d8d8;
+            background-color: #fff;
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
 
+        .btn-container {
+            outline: 1px solid red;
+            position: fixed;
+            /* left, top, right, bottom */
+            right: 40px;
+            bottom: 40px;
+        }
+
+        .btn-setting {
+          
+            background-image: url('./images/icons/setting.svg');
+           
+        }
+
+        .btn-top {
+          
+            background-image: url('./images/icons/arrow-top.svg');
+            margin-right: 16px; /*해당요소의 우측에 여백을 지정*/
+        }
+
+        .btn:hover {
+            background-color: #f3f3f3;
+        }
     </style>
 </head>
 
 <body>
-<div class="btn-container">
-        <button type="button">
-
-   
-    </div>
     <div class="container">
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quod quas laudantium, temporibus nostrum
@@ -345,7 +376,15 @@
         </p>
     </div>
 
-  
+    <div class="btn-container">
+        <a href="#" class="btn btn-top">
+            <span class="blind">위로가기</span>
+        </a>
+        <button type="button" class="btn btn-setting">
+            <span class="blind">설정</span>
+        </button>
+    </div>
 </body>
 
 </html>
+0922.html
