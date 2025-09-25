@@ -69,6 +69,24 @@ html,body{
         .btn:hover {
             background-color: #f3f3f3;
         }
+
+    .popup-container{
+        width: 350px;
+        height: 200px;
+        background-color: white;
+        border:2px solid rgb(146, 146, 146);
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        position: fixed;
+        right:50px;
+        bottom:100px;
+        display: none;
+        
+
+        }
+
+
     </style>
 </head>
 
@@ -384,6 +402,38 @@ html,body{
             <span class="blind">설정</span>
         </button>
     </div>
+
+ <section class="popup-container">
+    <button type="button" class="close-popup">
+<span>닫기</span>
+
+</button>
+
+    </section>
+
+<script>
+    const openBtn = document.querySelector('.btn-setting')
+    const popup = document.querySelector('.popup-container')
+    const closepopup = document.querySelector('.close-popup')
+    
+    openBtn.addEventListener('click',() => {
+        console.log('clicked!')
+        popup.style.display="block"
+
+        
+    })
+
+    closepopup.addEventListener('click',() => {
+        popup.style.display="none"
+
+        
+    })
+    
+    
+</script>
+
+
+
 </body>
 
 </html>
