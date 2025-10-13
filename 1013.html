@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./css/reset.css">
+    <style>
+    .btn-ham{
+        width:48px;
+        height: 48px;
+        border-radius: 50%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-ham:hover{
+        border: none;
+          background-color: rgb(247, 247, 247);
+          cursor: pointer;
+    }
+
+    .btn-ham .line{
+        width: 28px;
+        height: 1px;
+        background-color: black;
+        display: block;
+
+    }
+
+    </style>
+</head>
+<body>
+    <button class = "btn-ham">
+        <span class = "blind">메뉴열기</span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+
+    </button>
+
+    div,span -> 용도 (그룹용, 의미X)
+    blind -> 접근성, 안보이지만, 스크린 리더기에선 읽히도록 함
+
+    css가 적용되지 않는 주요 이유
+    1.셀렉터 오류(개발자 도구에서 아예 나타나지 않음)
+    2.오타
+    3.적용할 수 없는 속성(개발자도구애서 흐릿하게 표현)
+</body>
+</html>
