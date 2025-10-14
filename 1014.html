@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1014_variables.html</title>
+    <style>
+        :root{
+            --red : rgb(255, 135, 114);
+            --blue : rgb(0, 191, 255);
+            --gra1 : linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(192, 199, 87, 1) 50%, rgba(237, 83, 83, 1) 100%);
+            --text-l : 30px ;
+            --text-m : 24px ;
+            --text-s: 14px ;
+        }
+
+        .box1 {
+            background-color:var(--red);
+        }
+
+        .box2{
+            color:var(--blue);
+            font-size:var(--text-l);
+            background-image: var(--gra1);
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box1">Hello world</div>
+    <div class="box2">Hello world</div>
+    <script>
+        const apple = document.querySelector('.box');
+        apple.style.color = 'tomato'
+        //1. box라는 변수에 위의 div 요소를 담으시오, querySelector 사용
+
+        //2. css변경 : box요소의 글자색을 tomato로 변경하기
+    </script>
+</body>
+</html>
