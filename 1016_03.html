@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 선택자</title>
+</head>
+<style>
+
+
+/* 가상요소란? 선택한 요소의 일부만을 스타일을 적용하는 것. HTML애 새로운 요소(element)를 추가한 것 처럼 동작한다.*/
+/* 가상요소는 :: 를 붙여 사용한다. */
+
+a::before {
+    content: 'i like';
+    color: tomato;
+
+} 
+
+/* before :: -> 첫 번째 자식요소(가상 요소) 생성*/
+
+b::after{
+    content: 'is yummy';
+    color: rgb(255, 200, 0);
+}
+
+/* after :: -> 마지막 자식요소(가상 요소) 생성*/
+
+</style>
+
+
+<body>
+    <a>tomato</a>
+    <b>banana</b>
+</body>
+</html>
