@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basic</title>
+</head>
+<body>
+    <h1 id="title">
+        Hello World
+        <span>Javascript</span>
+    </h1>
+
+    <button type="button" id="btn">글자바꾸기</button>
+    <a href="#" id="link">링크</a>
+    <script>
+        const title = document.getElementById('title')
+        const btn = document.getElementById('btn')
+        const link = document.getElementById('link')
+        // get-> 값을 불러오는 거 set
+        console.log(title.textContent)
+        console.log(title.innerHTML)
+
+        //title.textContent = 'Javascript<strong>Class</strong>'
+        title.innerHTML = 'Javascript<strong>Class</strong>'
+        btn.textContent = 'change'
+        link.innerHTML = '<img src="./images/img/ghost_n1.png" alt=""> 고스트'
+        //innerText 써도 됨
+    </script>
+</body>
+</html>
