@@ -28,12 +28,12 @@ getCircleArea(5)
 
 
 function calcDiscount(x,y) {
-    const result = x - (x * y);
+    const result = x * (y / 100);
     console.log(`원래가격 ${x}원에서 ${y}%할인되어, 최종가격은 ${result}원 입니다.`)
 
 }
 
-calcDiscount(15000,0.5)
+calcDiscount(15000,50)
 
 
 function getRemainder(x,y) {
@@ -73,12 +73,12 @@ function canJoinEvent(x,y) {
 
 }
 
-canJoinEvent(25,"경기도")
+canJoinEvent(25,"서울특별시")
 
 
 
 
-const family = "있음"
+const family = "부모동반"
 
 function canWatchMovie(x,y) {
     const result = x >= 15 && y == family ? "관람가능" : "관람불가" 
@@ -86,15 +86,13 @@ function canWatchMovie(x,y) {
 
 }
 
-canWatchMovie(25,"있음")
+canWatchMovie(8,"혼자")
 
 
-const weekend = "월"
-const holiday = "일"
 
 
 function isWeekend(x) {
-    const result = x == weekend || x == holiday ? `입력하신 ${x}요일은 평일입니다.` : `입력하신 ${x}요일은 주말입니다.` 
+    const result = x == "토" || x == "일" ? `입력하신 ${x}요일은 주말입니다.` : `입력하신 ${x}요일은 평일입니다.` 
     console.log(result)
 
 }
