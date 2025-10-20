@@ -34,7 +34,7 @@ function getRectArea(a,b) {
 getRectArea(2,5)
 
 function isAdult(username, age) {
-    const result = age >- 18 ? "성인" : "미성년자"
+    const result = age >= 18 ? "성인" : "미성년자"
     console.log(`${username}님은 ${result} 입니다.`)
 
 }
