@@ -100,6 +100,24 @@ function isWeekend(x) {
 isWeekend("월")
 
 
+let a;
+console.log(typeof a)
+
+let b = 10;
+console.log(typeof b)
+
+let c = "hello";
+console.log(typeof c)
+
+let d = true;
+console.log(typeof d)
+
+let e = {};
+console.log(typeof e)
+
+let f = null;
+console.log(typeof f)
+
 
 
 
