@@ -18,7 +18,7 @@ getAerage(85,95,89)
 
 
 function getCircleArea(x) {
-    const result = x * x * 3.14;
+    const result = x * x * Math.PI;
     console.log(`반지름이 ${x}인 원의 넓이는 ${result}입니다.`)
 
 }
@@ -56,7 +56,7 @@ getRectPerimeter(5,8)
 
 
 function checkPass(x) {
-    const result = x > 60 ? "합격" : "불합격"
+    const result = x >= 60 ? "합격" : "불합격"
     console.log(result);
 
 }
