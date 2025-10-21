@@ -96,31 +96,31 @@ capital("Finland","Anthony","Helsinki")
 
 
 function adventure(x,withFamily){
-    const canRide = x > 130 || withFamily === "true"
+    const canRide = x > 130 || withFamily === true
     const result = canRide ? "있다" : "없다"
     console.log(`키${x}cm에 보호자동반${withFamily}인 한솔이는 해당 어드벤처 기구에 탑승할 수 ${result}`);
 }
 
-adventure(125,"false")
+adventure(125,false)
 
 
 
 function dungeon(x,withParty){
-    const canJoin = x <= 120 || withParty === "false"
+    const canJoin = x <= 120 || withParty === false
     const result = canJoin ? "있다" : "없다"
     console.log(`레벨${x}에 파티가${withParty}인 정인이는 해당 게임의 던전에 들어갈 수 ${result}`);
 }
 
-dungeon(120,"false")
+dungeon(120,false)
 
 
 function glp(x,y,z){
-    const canDo = x >= 80 || y === "false" && z >= 80 
+    const canDo = x >= 80 || y === false && z >= 80 
     const result = canDo ? "있다" : "없다"
     console.log(`몸무게가 ${x} kg ,식욕을 제어할 수 ${y} 는 연수는 위고비를 맞을 수 ${result}`);
 }
 
-glp(50,"true",50)
+glp(50,true,50)
 
 
 
@@ -144,12 +144,12 @@ dentist("사랑니")
 
 
 function exam(x,y){
-    const codeExam = !(x === "true") && y >= 80
+    const codeExam = !(x === true) && y >= 80
     const result = codeExam ? "합격" : "불합격"
     console.log(`${y}점을 받은 혜성이는 이 코딩시험에 ${result}했다.`);
 }
 
-exam("false",98)
+exam(false,98)
 
 
 function yunha(x,y,z){
