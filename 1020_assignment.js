@@ -18,7 +18,7 @@ getAerage(85,95,89)
 
 
 function getCircleArea(x) {
-    const result = x * x * Math.PI;
+    const result = Math.pow(x,2) * Math.PI; // 주어진 밑수를 지수만큼 제곱.(x의 2승)
     console.log(`반지름이 ${x}인 원의 넓이는 ${result}입니다.`)
 
 }
@@ -28,8 +28,9 @@ getCircleArea(5)
 
 
 function calcDiscount(x,y) {
-    const result = x * (y / 100);
-    console.log(`원래가격 ${x}원에서 ${y}%할인되어, 최종가격은 ${result}원 입니다.`)
+    const discountPrice = x * (y / 100);
+    const finalPrice = x - discountPrice
+    console.log(`원래가격 ${x}원에서 ${y}%할인되어, 최종가격은 ${finalPrice}원 입니다.`)
 
 }
 
@@ -37,7 +38,7 @@ calcDiscount(15000,50)
 
 
 function getRemainder(x,y) {
-    const result = x / y
+    const result = x / y;
     console.log(`${x}를 ${y}로 나눈 나머지는 ${result}입니다.`)
 
 }
@@ -57,7 +58,7 @@ getRectPerimeter(5,8)
 
 function checkPass(x) {
     const result = x >= 60 ? "합격" : "불합격"
-    console.log(result);
+    console.log(`${x}점은 ${result}입니다.`);
 
 }
 
@@ -68,8 +69,8 @@ checkPass(76)
 const city = "서울특별시"
 
 function canJoinEvent(x,y) {
-    const result = x >= 20 && y == city ? "이벤트 참여가 가능합니다" : "이벤트 참여가 불가능합니다" 
-    console.log(result);
+    const result = x >= 20 && y === city ? "이벤트 참여가 가능합니다" : "이벤트 참여가 불가능합니다" 
+    console.log(`${x}세, ${y}에 거주중인 당신은${result}`);
 
 }
 
@@ -78,15 +79,15 @@ canJoinEvent(25,"서울특별시")
 
 
 
-const family = "부모동반"
 
-function canWatchMovie(x,y) {
-    const result = x >= 15 && y == family ? "관람가능" : "관람불가" 
-    console.log(result);
 
+function canWatchMovie(x,wtihParent) {
+    const canWatch = x >= 15 && wtihParent
+    const result = canWatch ? "관람가능" : "관람불가" 
+    console.log(`나이 ${x}세, 보호자동반${wtihParent}하신 당신은 ${result}입니다.`);
 }
 
-canWatchMovie(8,"혼자")
+canWatchMovie(8,"false")
 
 
 
