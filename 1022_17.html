@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이스크림 만들기</title>
+
+</head>
+<body>
+    <h1>아이스크림 만들기</h1>
+    <button id ="btn-a">바닐라맛</button>
+    <button id ="btn-b">초코맛</button>
+    
+    <div class="result" id="result-box">아이스크림 맛은?</div>
+
+    <script>
+const btnA = document.getElementById('btn-a')
+const btnB = document.getElementById('btn-b')
+const result = document.getElementById('result-box')
+
+function makeIcecream(flavor){
+    result.textContent = flavor + '아이스크림 완성'
+}
+
+btnA.addEventListener('click', () =>{
+    makeIcecream(btnA.textContent);
+});
+
+btnB.addEventListener('click', () =>{
+    makeIcecream(btnB.textContent);
+});
+
+
+function iceCream(syrup){
+console.log(`${syrup} icecream`)}
+
+syrup = ('choco')
+
+
+    </script>
+</body>
+</html>
+
+
