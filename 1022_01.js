@@ -12,5 +12,5 @@ for(let i=0;i<numbers.length; i++) {
     console.log(`${numbers}의 총 합은 ${result}입니다.`);
 
 
-const str = 'Hello World';
+const str = ['Hello World'];
 console.log(str.length);
