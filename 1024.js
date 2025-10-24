@@ -32,12 +32,6 @@ for(let i=0; i< numbers.length; i++) {
 
 //4번 문제
 
-for (const number of numbers) {
-    if (number>=20)
-        console.log(number)
-}
-
-
 for(let i=0; i< numbers.length; i++) {
     if (numbers[i]>=20){
     count++;
