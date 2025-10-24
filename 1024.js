@@ -3,6 +3,7 @@ const str = 'Hello, World'
 let result = 0
 let count = 0
 
+
 //for문을 이용해서 numbers의 모든 숫자를 console에 찍기
 
 for(let i=0; i< numbers.length; i++) {
@@ -32,13 +33,15 @@ for(let i=0; i< numbers.length; i++) {
 
 //4번 문제
 
+
 for(let i=0; i< numbers.length; i++) {
     if (numbers[i]>=20){
-    count++;
+    count = count + 1
 }}
 
     
 console.log(count);
+
 
 
 
