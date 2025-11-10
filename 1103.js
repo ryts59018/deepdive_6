@@ -1,13 +1,9 @@
 // 공배수 구하기
-const result = 0
-function getNumber(num, x){
-if (num % x = 0) {
-     result + 1
-} else (num % x = 1){
-    result
-}
- 
 
+function getNumber(num, x){
+let result = num % x === 0 ? "공배수" : "공배수아님"
+console.log(result);
+return result
 
 }
 
